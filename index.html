@@ -1,0 +1,244 @@
+<!-- Find this line around line 320 -->
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=700&fit=crop" alt="Signature Collection" loading="lazy">
+
+<!-- Replace with your image URL -->
+<img src="YOUR_JEWELLERY_IMAGE_1.jpg" alt="Signature Collection" loading="lazy">
+<!-- Find around line 352 -->
+<img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&h=700&fit=crop" alt="Diamond Brilliance" loading="lazy">
+
+<!-- Replace with -->
+<img src="YOUR_DIAMOND_IMAGE.jpg" alt="Diamond Brilliance" loading="lazy"><!-- Lines 365-400 - Gallery section -->
+<!-- Replace each image source -->
+<img src="YOUR_GALLERY_1.jpg" alt="Gallery 1" loading="lazy">
+<img src="YOUR_GALLERY_2.jpg" alt="Gallery 2" loading="lazy">
+<!-- etc for all 6 items --><!-- Lines 335 & 390 - Full width images -->
+<img src="YOUR_PARALLAX_1.jpg" alt="Luxury Detail">
+<img src="YOUR_PARALLAX_2.jpg" alt="Luxury Moments"><!-- Around line 405 -->
+<img src="YOUR_BESPOKE_IMAGE.jpg" alt="Bespoke Service" loading="lazy">/* Gold color in these locations */
+#d4af37  →  YOUR_COLOR_CODE
+
+/* Examples of your accent colors */
+Rose Gold:    #D4A373
+Copper:       #B87333
+Silver:       #C0C0C0
+Platinum:     #E5E4E2Line 43:  border: 2px solid #d4af37;     /* Cursor */
+Line 62:  color: #d4af37;                 /* Hero title */
+Line 112: color: #d4af37;                 /* Section heading */
+Line 163: border: 1px solid rgba(212, 175, 55, 0.2);  /* Cards */#0a0a0a  →  Deep dark (Main background)
+#1a1a1a  →  Lighter dark (Alt sections)
+#000000  →  Darkest (Footer)
+
+/* Alternative palettes */
+Luxury Deep: #1a0f2e, #2d1b4e, #0a0a0a
+Warm Dark:   #2a1810, #3d2817, #1a0f08
+Modern Dark: #0f0f0f, #1a1a1a, #000000<!-- FIND THIS -->
+<h1>LUMINAIRE</h1>
+<p>Timeless Elegance Redefined</p>
+
+<!-- CHANGE TO YOUR BRAND -->
+<h1>YOUR BRAND NAME</h1>
+<p>Your tagline here</p><h2>Signature Collection</h2>
+<p>YOUR FIRST PARAGRAPH - Talk about your collection philosophy, craftsmanship, design inspiration. Keep it elegant and minimal. 2-3 sentences.</p>
+<p>YOUR SECOND PARAGRAPH - Describe specific features, materials, or what makes your collection unique.</p><h2>Diamond Brilliance</h2>
+<p>Talk about your diamond selection, sourcing, certification process...</p>
+<p>Describe quality standards, gemstone selection criteria, uniqueness...</p><h2>Bespoke Creations</h2>
+<p>Explain your custom design service, design consultation process...</p>
+<p>Describe your craftsmanship approach, personalization, timeline...</p><!-- Each gallery item has overlay text -->
+<div class="gallery-text">Emerald Elegance</div>
+<div class="gallery-text">Ruby Romance</div>
+<div class="gallery-text">Sapphire Serenity</div>
+<!-- Change to your collection names --><!-- Three feature cards -->
+<h3>Premium Quality</h3>
+<p>Your description...</p>
+
+<h3>Authentic Certification</h3>
+<p>Your description...</p>
+
+<h3>Lifetime Guarantee</h3>
+<p>Your description...</p><p>YOUR BRAND NAME © 2024. ALL RIGHTS RESERVED.</p>
+<p>Your brand tagline or mission statement.</p><!-- Insert around line 345 -->
+<section class="section alt">
+    <div class="section-content">
+        <div class="section-text">
+            <h2>Model Showcase</h2>
+            <p>Discover how our jewellery transforms the elegance of our featured models. Each piece is expertly styled to highlight its unique beauty and craftsmanship.</p>
+            <p>Browse our collection as worn by style icons and celebrities. Find inspiration for your perfect piece.</p>
+        </div>
+        <div class="section-img">
+            <div class="img-wrapper">
+                <img src="YOUR_MODEL_IMAGE_1.jpg" alt="Model Showcase" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section><!-- Insert around line 410 -->
+<section class="section">
+    <div style="width: 100%; opacity: 0;">
+        <h2 style="font-size: 3.5vw; color: #d4af37; letter-spacing: 2px; margin-bottom: 60px; text-align: center; text-transform: uppercase;">Featured Models</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="MODEL_1.jpg" alt="Model 1" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">Model Name - Collection Name</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="MODEL_2.jpg" alt="Model 2" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">Model Name - Collection Name</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="MODEL_3.jpg" alt="Model 3" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">Model Name - Collection Name</div>
+                </div>
+            </div>
+            <!-- Add more as needed -->
+        </div>
+    </div>
+</section>/* Find this around line 480 */
+const lenis = new Lenis({
+    duration: 1.2,  // Increase to 1.5-2.0 for slower, more cinematic feel
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    // ...
+});/* Find around line 545 */
+gsap.to(element.querySelector('img'), {
+    yPercent: 15,  // Change to 25 for stronger effect, 8 for subtle
+    duration: 1
+});/* Around line 560 */
+gsap.to(galleryItems, {
+    stagger: 0.1,  // 0.05 = faster cascade, 0.2 = slower
+    duration: 0.8
+});
+
+/* Around line 575 */
+gsap.to(featureCards, {
+    stagger: 0.15,  // Adjust similarly
+    duration: 0.8
+});/* Around line 531 */
+gsap.to(img, {
+    opacity: 1,
+    duration: 0.8  // 0.5 = fast reveal, 1.2 = slower reveal
+});/* Find around line 43 */
+.cursor {
+    width: 20px;        /* Change cursor size */
+    height: 20px;
+    border: 2px solid #d4af37;  /* Change color */
+    opacity: 0.7;       /* 0-1, lower = more transparent */
+}
+
+.cursor::before {
+    background: #d4af37;  /* Center dot color */
+}/* Add after line 497 */
+const interactiveElements = document.querySelectorAll('.gallery-item, .feature-card, a');
+
+interactiveElements.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        gsap.to(cursor, {
+            scale: 1.5,
+            border: '2px solid #d4af37',
+            duration: 0.3
+        });
+    });
+    
+    el.addEventListener('mouseleave', () => {
+        gsap.to(cursor, {
+            scale: 1,
+            duration: 0.3
+        });
+    });
+});/* Line 16 */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    /* Change to: */
+    font-family: 'Playfair Display', serif;  /* More luxe */
+    /* or */
+    font-family: 'Montserrat', sans-serif;   /* More modern */
+}/* Hero heading */
+.hero h1 {
+    font-size: 5vw;  /* Increase to 6vw for bigger, or 4vw for smaller */
+}
+
+/* Section headings */
+.section-text h2 {
+    font-size: 3.5vw;  /* Adjust scale */
+}
+
+/* Body text */
+.section-text p {
+    font-size: 1.1vw;  /* Adjust readability */
+}<!-- Add before hero section -->
+<header style="position: fixed; top: 0; width: 100%; z-index: 100; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(10px);">
+    <div style="color: #d4af37; font-size: 1.3vw; letter-spacing: 2px; font-weight: 300;">LUMINAIRE</div>
+    <nav style="display: flex; gap: 40px;">
+        <a href="#" style="color: #a0a0a0; text-decoration: none; letter-spacing: 1px; font-size: 0.9vw; transition: color 0.3s;">COLLECTIONS</a>
+        <a href="#" style="color: #a0a0a0; text-decoration: none; letter-spacing: 1px; font-size: 0.9vw; transition: color 0.3s;">ABOUT</a>
+        <a href="#" style="color: #a0a0a0; text-decoration: none; letter-spacing: 1px; font-size: 0.9vw; transition: color 0.3s;">CONTACT</a>
+    </nav>
+    <div style="display: flex; gap: 20px;">
+        <a href="#" style="color: #d4af37;">Instagram</a>
+        <a href="#" style="color: #d4af37;">Facebook</a>
+    </div>
+</header><!-- Add in section text areas -->
+<button style="background: transparent; border: 2px solid #d4af37; color: #d4af37; padding: 15px 40px; font-size: 0.95vw; letter-spacing: 2px; cursor: pointer; transition: all 0.4s; margin-top: 20px; text-transform: uppercase; font-weight: 300;">
+    Explore Collection
+</button>
+
+<style>
+button:hover {
+    background: #d4af37;
+    color: #0a0a0a;
+}
+</style>/* Add to style section for better mobile responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;  /* More readable on mobile */
+    }
+    
+    .section-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-text p {
+        font-size: 1rem;
+    }
+    
+    .cursor {
+        display: none;  /* Hide custom cursor on touch devices */
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 20px !important;
+    }
+}<!-- Replace image URLs with Cloudinary CDN -->
+<img src="https://res.cloudinary.com/YOUR-CLOUD/image/upload/w_600,h_700,c_fill,f_auto/YOUR_IMAGE.jpg" alt="Description"><!-- Add sizes attribute for responsive images -->
+<img src="image.jpg" 
+     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+     srcset="image-small.jpg 600w, image-large.jpg 1200w"
+     alt="Description"><!-- Insert before footer -->
+<section class="section alt">
+    <div style="width: 100%; max-width: 600px; margin: 0 auto;">
+        <h2 style="font-size: 3.5vw; color: #d4af37; letter-spacing: 2px; margin-bottom: 40px; text-align: center; text-transform: uppercase;">Get in Touch</h2>
+        
+        <form style="display: flex; flex-direction: column; gap: 20px;">
+            <input type="text" placeholder="Your Name" style="padding: 15px; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.2); color: #f0f0f0; letter-spacing: 1px;">
+            
+            <input type="email" placeholder="Your Email" style="padding: 15px; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.2); color: #f0f0f0; letter-spacing: 1px;">
+            
+            <textarea placeholder="Your Message" rows="6" style="padding: 15px; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.2); color: #f0f0f0; letter-spacing: 1px; font-family: inherit; resize: vertical;"></textarea>
+            
+            <button type="submit" style="padding: 15px; background: transparent; border: 2px solid #d4af37; color: #d4af37; letter-spacing: 2px; cursor: pointer; font-size: 0.95vw; text-transform: uppercase; transition: all 0.4s; font-weight: 300;">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section><!-- Add in <head> section -->
+<meta name="description" content="Luxury jewellery collection featuring premium diamonds, gemstones, and bespoke designs. Timeless elegance redefined.">
+<meta name="keywords" content="luxury jewellery, diamonds, gemstones, bespoke, premium">
+<meta name="author" content="Your Brand Name">
+<meta property="og:title" content="Luminaire - Premium Jewellery Collection">
+<meta property="og:description" content="Discover timeless elegance with our luxury jewellery collection.">
+<meta property="og:image" content="YOUR_FEATURED_IMAGE.jpg">
+
+<link rel="canonical" href="https://yourdomain.com">
